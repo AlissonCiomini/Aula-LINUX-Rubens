@@ -1,0 +1,220 @@
+cd
+
+O comando “cd” serve para acessar e mudar de diretório corrente. Ele é utilizado para a navegação entre as pastas do computador.
+Exemplo: cd /home/baixaki/Desktop – Acessa a pasta correspondente à área de trabalho do usuário baixaki.
+
+cd .. 
+
+Este comando faz com que você saia do diretório corrente. 
+
+
+pwd
+
+Exibe a pasta atual na qual o usuário se encontra.
+Exemplo: Se o usuário baixaki digitar cd ~/ e em seguida digitar pwd, o retorno será /home/baixaki .
+
+ls
+
+Exibe os arquivos que estão dentro da pasta na qual o usuário está no momento.
+Para usá-lo basta digitar ls. Existem variações, tais como ls -l, com a qual é possível obter informações mais detalhadas sobre os arquivos, como permissões e tamanho.
+
+cp
+
+Copia arquivos – o famoso CTRL+C + CTRL+V. Exemplo:
+$ cp Exemplo.doc /home/baixaki/Trabalho/EXEMPLO.doc  - O arquivo EXEMPLO.doc foi copiado para a pasta /home/baixaki/Trabalho com o mesmo nome.
+
+mv
+
+O comando "mv" tem a função de mover arquivos. A utilização dele é praticamente igual  a do comando cp. Exemplo:
+$ mv MV.txt /home/baixaki/Trabalho/MV.txt  - O arquivo MV.txt foi movido para a pasta /home/baixaki/Trabalho com o mesmo nome.
+$ mv MV.txt  VM.txt – O arquivo MV.txt continuou onde estava, porém, agora possui o nome de VM.txt.
+
+rm
+
+O "rm" tem a função de remover arquivos. Tome cuidado ao utilizá-lo, pois caso você remova algum arquivo por engano, o erro será irreversível.
+Exemplo: rm /home/baixaki/Arquivo.txt – O arquivo Arquivo.txt localizado na pasta /home/baixaki foi deletado.
+
+mkdir
+
+Enquanto o rmdir remove, este comando cria diretórios.
+Exemplo: mkdir DIRETORIO – A pasta DIRETORIO foi criada no local onde o usuário se encontrava.
+
+cat
+
+O "cat" exibe o que há dentro de determinado arquivo. Ele é útil quando deseja ler ou exibir um arquivo de texto.
+Exemplo: cat TEXTO.txt – Exibe o conteúdo do arquivo TEXTO.txt
+
+clear
+
+O "clear" serve para limpar a tela do terminal. O mesmo ocorre quando se pressiona CTRL+L.
+
+man
+
+O comando "man" exibe a função de determinado comando. Ele é muito útil quando não se sabe o que um comando faz, ou quando se pretende aprender mais sobre a sua utilização. Aconselha-se a leitura do manual sempre que houver dúvidas.
+
+Exemplo: man ls – Exibe o que faz o comando ls e quais são suas variações.
+man man – Exibe o que o comando man faz.
+Para sair do man pressione o tecla “q”.
+
+Por padrão, o man vem configurado para o inglês. No Ubuntu, você pode deixá-lo em português através do comando  $ sudo apt-get install manpages-pt manpages-pt-dev , porém alguns comando continuarão em inglês.
+
+UNAME
+ 
+
+O comando uname serve para exibir informações do sistema, tais como: o sistema operacional, versão do kernel, arquitetura da máquina e muitos outros. 
+
+# uname -a
+Linux server.nocbr.net 2.4.23-HN-1.3-P4 #1 SMP Mon Dec 8 13:58:54 EST 2003 i686 i686 i386 GNU/Linux 
+
+# uname -s
+Linux 
+
+# uname -r
+2.4.23-HN-1.3-P4 
+
+# uname -m
+i686 
+
+# uname -n
+server.nocbr.net 
+
+# uname -o
+server.nocbr.net 
+
+Para mais informações sobre o comando, execute: 
+
+# uname --help
+ou
+# man uname 
+
+Touch
+
+O comando touch permite alterar o registro da data e hora de acesso ou modificação dos arquivos em um sistema Linux.
+
+Pode ser usado também para resetar o timestamp dos arquivos.
+
+Um outro uso bastante comum do comando touch é a criação de arquivos de texto vazios, que podem posteriormente serem editados com qualquer editor de textos disponível, como o vim, emacs ou nano.
+
+-a
+Muda somente a hora de acesso
+
+-m
+Muda somente a hora de modificação -> fazer esse exemplo
+
+-t timestamp
+Em vez da hora atual, usa timestamp no formato [AA]MMDDhhmm.ss
+Ex.: para 21/12/2000, 14:00, -> 200012211400 -> valores que podem ser exibidos com ls -l e stat
+
+-c
+Não criar arquivos
+
+Echo
+
+echo é um comando disponível no Unix que apresenta um texto na tela de um terminal de computador.
+
+
+More
+
+
+O comando more, além da sua função básica de exibir um arquivo na tela aos poucos, oferece algumas outras facilidades.
+
+Durante a exibição do arquivo, se você digitar a letra "v", será invocado o comando vi para editar o arquivo sendo exibido.
+
+Se você digitar a letra "b", conseguirá voltar uma página atrás. Mas não é só isso, digitando "h", você recebe uma página de ajuda, que explica as várias opções disponíveis.
+
+
+LS Run
+
+
+Informações de serviços em execução
+
+
+LS Srv
+
+
+Servidores
+
+
+LS Usr
+
+
+Exibe programas instalados pelo usuario
+
+
+LS Tmp
+
+
+É um sistema de arquivos e memória
+
+
+SU
+
+
+Permite acesso ao root
+
+
+Vin.tiny
+
+
+Entra no editor de textos Vin.tiny
+
+
+chmod
+
+
+modifica e da permissões para ler,escrever e executar
+
+
+Cat/etc/passwd
+
+
+Exibe todos os usuarios
+
+
+add user
+ 
+
+adiciona um novo usuario
+
+
+Apt-get update
+
+
+Atualiza o sistema
+
+
+Apt-cache search
+
+
+procura (ex: apt-cache search gcc, ele ira procurar se há algo disponivel ou relacionado com gcc)
+
+
+apt-get install
+
+
+Instala ou se ja tiver instalado mantém atualizado
+
+
+Man Networkmanager
+
+
+Exibe manual de gerenciamneto de rede
+
+
+Lspci
+
+
+Exibe informações sobre a placa de rede
+
+
+Lsmod
+
+
+Exibe modulos (todos os drivers instalados)
+
+
+Top
+
+
+Exibe processos da maquina (H=Help)
+
